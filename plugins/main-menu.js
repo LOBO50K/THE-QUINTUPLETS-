@@ -30,11 +30,11 @@ const defaultMenu = {
   before: `
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-“ Hola *%name* soy *Ai Hoshino*, %greeting ”
+“ Hola *%name* soy *Koruda*, %greeting ”
 
 ╭────═[ *I N F O  -  B O T* ]═─────⋆
 │╭───────────────···
-┴│✯ *🍬 Modo* : Público
+┴│✯ *🐢 Modo* : Público
 ✩│✯ *📚 Baileys* : Multi Device
 ✩│✯ *⏱ Tiempo Activo* : %muptime
 ┬│✯ *👤 Usuarios* : %totalreg
@@ -43,8 +43,8 @@ const defaultMenu = {
 %readmore
 ╭────═[ *I N F O  -  U S E R* ]═─────⋆
 │╭───────────────···
-┴│✯ *🍭 Nombre* : %name
-✩│✯ *⭐ Estrellas* : %limit
+┴│✯ *🤠 Nombre* : %name
+✩│✯ *💴 Zenis* : %limit
 ✩│✯ *📈 Nivel* : %level
 ┬│✯ *💫 XP* : %totalexp
 │╰────────────────···
@@ -125,7 +125,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
               return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                .replace(/%islimit/g, menu.limit ? '◜⭐◞' : '')
+                .replace(/%islimit/g, menu.limit ? '◜🌊◞' : '')
                 .replace(/%isPremium/g, menu.premium ? '◜🪪◞' : '')
                 .trim()
             }).join('\n')
@@ -173,7 +173,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp13 = 'https://telegra.ph/file/ba7c4a3eb7bf3d892b0c8.mp4'
     let pp14 = 'https://tinyurl.com/ymlqb6ml'
     let pp15 = 'https://tinyurl.com/ykv7g4zy'
-    let img = await (await fetch(`https://i.ibb.co/gDjssZH/file.jpg`)).buffer()
+    let img = await (await fetch(`https://i.ibb.co/b2JSVHF/file.jpg`)).buffer()
     await m.react('⭐')
    // await conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: estilo })
     await conn.sendFile(m.chat, img, 'thumbnail.jpg', text.trim(), m, null, rcanal)
