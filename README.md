@@ -1,7 +1,7 @@
 <h1 align="center">‧ 【 ✯ Ai Hoshino - MD ✰ 】 ‧
 </p>
 <p>
-        <img src= "https://telegra.ph/file/89fa6a3c8e9cedda6f5ca.jpg">
+        <img src= "https://telegra.ph/file/aff4f06b811e3f98f1b56.jpg">
     </p>
     <p align="center">
         <a href="#"><img title="simple-whatsapp-bot" src="https://img.shields.io/badge/-SIMPLE--WHATSAPP--BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
@@ -89,9 +89,9 @@ npm start
 
 ## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Contacto" width="42" height="42"> Contacto
 
-- Si la Bot tiene algún contactame ฅ^•ﻌ•^ฅ
+- Si el Bot tiene algún contactame ฅ^•ﻌ•^ฅ
 
-* <a href="https://wa.me/5218139760662"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+* <a href="https://wa.me/51913776697"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ---------
 
@@ -100,7 +100,7 @@ npm start
 
 - Si quieres probar la Bot antes de instalar
 
-* <a href="https://chat.whatsapp.com/CqdWTXmS702JD31SQzr0Ph"><img alt="Group" src="https://img.shields.io/badge/Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+* <a href="https://chat.whatsapp.com/GnZTHDnObwQ3aaq9szHSPP"><img alt="Group" src="https://img.shields.io/badge/Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ---------
 
@@ -121,4 +121,4 @@ npm start
 
 <a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/qRfKp3t/file.jpg" width="300" height="300" alt="おDaniel"/></a>
 
-`© Ai Hoshino - MD / Starlights Team _ By おDaniel`
+` koruda - OFC / TEAM KORUDA OFC _ …⁠ᘛDaniel`
