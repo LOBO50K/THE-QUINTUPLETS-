@@ -8,7 +8,7 @@ let handler = async (m, {conn, usedPrefix}) => {
     if (!(who in global.db.data.users)) return conn.reply(m.chat, '🚩 El usuario no se encuentra en mi base de Datos.', m, rcanal).then(_ => m.react('✖️'))
     let img = await (await fetch(`https://tinyurl.com/27t9qss5`)).buffer()
     let txt = ` –  *S T A R S  -  U S E R*\n\n`
-        txt += `┌  ✩  *💳 Nombre* : ${user.name}\n`
+        txt += `┌  ✩  *🪪 Nombre* : ${user.name}\n`
         txt += `│  ✩  *💴 Zenis* : ${toNum(user.limit)} ( *${user.limit}* )\n`
         txt += `│  ✩  *🏦 Bank* : ${toNum(user.bank)} ( *${user.bank}* )\n`
         txt += `└  ✩  *💫 XP* : ${toNum(user.exp)} ( *${user.exp}* )`
