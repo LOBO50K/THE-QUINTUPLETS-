@@ -22,7 +22,7 @@ let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
 	txt += `	✩   *Autor* : ${vid.author.name}\n`
 	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
 	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
-	txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
+	txt += `*- ↻ El audio se esta enviando espera un momento, soy lento. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
 try {
 let yt = await fg.yta(vid.url, q)
@@ -60,7 +60,7 @@ let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
 	txt += `	✩   *Autor* : ${vid.author.name}\n`
 	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
 	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
-	txt += `*- ↻ El video se esta enviando espera un momento, soy lenta. . .*`
+	txt += `*- ↻ El video se esta enviando espera un momento, soy lento. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, rcanal)
 try {
 let yt = await fg.ytv(vid.url, q)
@@ -98,7 +98,7 @@ let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
 	txt += `	✩   *Autor* : ${vid.author.name}\n`
 	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
 	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
-	txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
+	txt += `*- ↻ El audio se esta enviando espera un momento, soy lento. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
 try {
 let yt = await fg.yta(vid.url, q)
@@ -135,7 +135,7 @@ let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
 	txt += `	✩   *Autor* : ${vid.author.name}\n`
 	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
 	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
-	txt += `*- ↻ El video se esta enviando espera un momento, soy lenta. . .*`
+	txt += `*- ↻ El video se esta enviando espera un momento, soy lento. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
 try {
 let yt = await fg.ytv(vid.url, q)
