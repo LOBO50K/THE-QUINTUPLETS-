@@ -7,7 +7,7 @@ const readMore = more.repeat(4001)
 let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D*
 
 1-Grupo
-【 🔰𝘾𝙤𝙢𝙪𝙣𝙞𝙩𝙮 𝙉𝙚𝙭𝙪𝙨 𝙃𝙤𝙨𝙩🔰  】
+【 Indefinido   】
 *✰* ${group}
 
 *─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
@@ -15,7 +15,7 @@ let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para con
 ➠ Enlace anulado? entre aquí! 
 
 2.-Canal :
-🔰𝘾𝙤𝙢𝙪𝙣𝙞𝙩𝙮 𝙉𝙚𝙭𝙪𝙨 𝙃𝙤𝙨𝙩🔰
+♪  ᴛᴇᴀᴍ ᴋᴏʀᴜᴅᴀ ᴏꜰᴄ ♩
 *✰* ${canal}
 
 > 🚩 ${textbot}`
