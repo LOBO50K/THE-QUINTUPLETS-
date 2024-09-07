@@ -47,7 +47,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/StarlightsTeam/Ai-Hoshino.git && cd Ai-Hoshino
+git clone https://github.com/Team Koruda ofc/Koruda.git && cd Koruda-bot
 ```
 
 ```bash
@@ -78,11 +78,8 @@ npm start
 - [x] Configuración de grupo
 - [x] antidelete, antilink, antiarabes, etc
 - [x] Bienvenida personalizada
-- [x] Chatbot (simsimi)
-- [x] Crear sticker de image/video/gif/url
-- [x] SubBot (Jadibot)
+- [x] Imágenes a url
 - [x] Juego RPG
-- [x] Descarga de música y video de YT
 - [ ] Otros
 
 ---------
