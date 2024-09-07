@@ -42,5 +42,5 @@ async function searchPornhub(search) {
   } catch (error) {
     console.error('Ocurrió un error al buscar en Pornhub:', error);
     return { result: [] };
-  }
+  } 
 }
