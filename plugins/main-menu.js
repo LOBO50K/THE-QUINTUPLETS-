@@ -30,7 +30,7 @@ const defaultMenu = {
   before: `
 
 
-> “  Hola *%name* soy *nakano*, %greeting ”
+>   Hola *%name* soy *nakano*, %greeting 
 
  ╭────═[💞💖]═─────⋆
 │╭───────────────···
