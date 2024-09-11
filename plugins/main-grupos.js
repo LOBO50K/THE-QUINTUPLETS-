@@ -1,10 +1,10 @@
 import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
-let img = await (await fetch(`https://i.ibb.co/b2JSVHF/file.jpg`)).buffer()
+let img = await (await fetch(`https://i.ibb.co/jGsgr5M/file.jpg`)).buffer()
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D*
+let txt = `Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D`
 
 1-Grupo
 【 Indefinido   】
@@ -15,7 +15,7 @@ let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para con
 ➠ Enlace anulado? entre aquí! 
 
 2.-Canal :
-♪  ᴛᴇᴀᴍ ᴋᴏʀᴜᴅᴀ ᴏꜰᴄ ♩
+𝑻𝒆𝒂𝒎 𝒏𝒂𝒌𝒂𝒏𝒐
 *✰* ${canal}
 
 > 🚩 ${textbot}`
