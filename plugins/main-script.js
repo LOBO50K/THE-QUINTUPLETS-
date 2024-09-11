@@ -2,7 +2,7 @@ import moment from 'moment-timezone'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args }) => {
-let res = await fetch('https://github.com/LOBO50K/THE-QUINTUPLETS')
+let res = await fetch('https://github.com/LOBO50K/THE-QUINTUPLETS-.git')
 let json = await res.json()
 try {
 let txt = `*乂  S C R I P T  -  M A I N*\n\n`
@@ -14,7 +14,7 @@ let txt = `*乂  S C R I P T  -  M A I N*\n\n`
     txt += `	✩   *Forks* : ${json.forks_count}\n`
     txt += `	✩   *Stars* : ${json.stargazers_count}\n\n`
     txt += `> 🚩 *${textbot}*`
-let img = await (await fetch(`https://i.ibb.co/SskVVN7/file.jpg`)).buffer()
+let img = await (await fetch(`https://i.ibb.co/0Zj6Zdd/file.jpg`)).buffer()
 
 await conn.sendAi(m.chat, botname, textbot, txt, img, img, canal, m)
 } catch {
