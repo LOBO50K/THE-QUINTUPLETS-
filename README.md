@@ -1,15 +1,8 @@
-
-
-## <img src="https://i0.wp.com/i230.photobucket.com/albums/ee124/joaclint/joaclint_istgud/ruedas.gif" alt="Herramientas" width="35" height="35"> Herramientas
-
-```bash
- Termux
- WhatsApp
- 2 ce## 💞 **`𝙽𝙰𝙺𝙰𝙽𝙾 - 𝙱𝙾𝚃 - 𝙾𝙵𝙲`**
+## 💞 **`𝙽𝙰𝙺𝙰𝙽𝙾 - 𝙱𝙾𝚃 - 𝙾𝙵𝙲`**
 ## 💞 **`EL BOT MAS DIVERTIDO DE WHATSAPP`**
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF0000&lines=Bienvenido+al+Repositorio;Nakano+-+Bot+-+OFC;Gracias+por+preferirnos;Creado+por+Lobo;💖+Sensei!!!;💞)](https://git.io/typing-svg)
 ![Nakano](https://telegra.ph/file/ba3bb9737d903a0994570.jpg)
-lares o PC
+
 ```
 - Descarga termux dando clic [aqui](https://f-droid.org/repo/com.termux_118.apk)
 
@@ -99,6 +92,6 @@ npm start
 <div align="center">
   <h1 align="center">Editor y Propietario de la Bot</h1>
 
-<a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/MDHkhRZ/file.jpg" width="300" height="300" alt="おDaniel"/></a>
+<a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/BGmBdgx/file.jpg" width="300" height="300" alt="Lobo💞"/></a>
 
 ` koruda - OFC / TEAM KORUDA OFC _ …⁠ᘛDaniel`
