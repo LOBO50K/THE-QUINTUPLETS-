@@ -14,7 +14,7 @@ let txt = '`- 乂  S C R I P T`\n\n'
     txt += `	•   *𝕱𝖔𝖗𝖐𝖘* : ${json.forks_count}\n`
     txt += `	•   *𝕾𝖙𝖆𝖗𝖘* : ${json.stargazers_count}\n\n`
     txt += `> 💌 *${textbot}*`
-let img = await (await fetch(`https://tinyurl.com/247ebo9v`)).buffer()
+let img = await (await fetch(`https://tinyurl.com/26ehamvg`)).buffer()
 
 await conn.sendAi(m.chat, botname, textbot, txt, img, img, canal, m)
 } catch {
