@@ -4,7 +4,7 @@ let handler  = async (m, { conn, usedPrefix, command }) => {
 let img = await (await fetch(`https://i.ibb.co/jGsgr5M/file.jpg`)).buffer()
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-let txt = ` * 【H】【O】【L】【A】 【T】【E】 【I】【N】【V】【I】【T】【A】【M】【O】【S】 【A】 【L】【O】【S】 【G】【R】【U】【P】【O】【S】 【O】【F】【I】【C】【I】【A】【L】【E】【S】 【D】【E】 【L】【A】 【B】【O】【T】 ฅ^•ﻌ•^ฅ*
+let txt = ` * 【H】【O】【L】【A】  ฅ^•ﻌ•^ฅ*
 
 1-Grupo
 🅽🅰︎🅺🅰︎🅽🅾︎ 🆇 🅶🆁🆄🅿︎🅾︎🆂 
