@@ -85,17 +85,17 @@ if (methodCode && !conn.authState.creds.registered) {
     setTimeout(async () => {
         let codeBot = await conn.requestPairingCode(cleanedNumber);
         codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
-        let txt = ` –  *S E R B O T  -  S U B B O T*\n\n`
-	    txt += `     .・。.・゜✭・❤・✫・゜・。.`
-	    txt += `         ·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙`
-            txt += `┌  ✩  *Usa este Código para convertirte en un Sub Bot*\n`
-            txt += `│  ✩  Pasos\n`
-            txt += `│  ✩  *1* : Haga click en los 3 puntos\n`
-            txt += `│  ✩  *2* : Toque dispositivos vinculados\n`
-            txt += `│  ✩  *3* : Selecciona *Vincular con el número de teléfono*\n` 
-            txt += `└  ✩  *4* : Escriba el Codigo\n\n`
+        let txt = ` –  *𝑺 𝑬 𝑹 𝑩 𝑶 𝑻  ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙ ✩*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙   𝑺 𝑼 𝑩 𝑩 𝑶 𝑻*\n\n`
+	    txt += `           .・。.・゜✭・❤・✫・゜・。.`
+	    txt += `               ·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙`
+            txt += `┌    *𝑼𝒔𝒂 𝒆𝒂𝒕𝒆 𝒄𝒐𝒅𝒊𝒈𝒐 𝒑𝒂𝒓𝒂 𝒄𝒐𝒎𝒃𝒆𝒓𝒕𝒊𝒓𝒕𝒆 𝒆𝒏 𝒔𝒖𝒃-𝒃𝒐𝒕 𝒅𝒆 𝒍𝒂 𝒏𝒂𝒌𝒂𝒏𝒐*\n`
+            txt += `│   ˚₊· ͟͟͞͞➳❥ Pasos\n`
+            txt += `│   ˚₊· ͟͟͞͞➳❥ *1* : 𝑯𝒂𝒈𝒂 𝒄𝒍𝒊𝒄𝒌 𝒆𝒏 𝒍𝒐𝒔 3 𝒑𝒖𝒏𝒕𝒐𝒔\n`
+            txt += `│   ˚₊· ͟͟͞͞➳❥ *2* : 𝑻𝒐𝒒𝒖𝒆 𝒅𝒊𝒔𝒑𝒐𝒔𝒊𝒕𝒊𝒗𝒐𝒔 𝒗𝒊𝒏𝒄𝒖𝒍𝒂𝒅𝒐𝒔\n`
+            txt += `│   ˚₊· ͟͟͞͞➳❥ *3* : 𝑺𝒆𝒍𝒆𝒄𝒄𝒊𝒐𝒏𝒂 *𝑽𝒊𝒏𝒄𝒖𝒍𝒂𝒓 𝒄𝒐𝒏 𝒆𝒍 𝒏𝒖𝒎𝒆𝒓𝒐 𝒅𝒆 𝒕𝒆𝒍𝒆𝒇𝒐𝒏𝒐*\n` 
+            txt += `└  ˚₊· ͟͟͞͞➳❥  *4* : 𝑬𝒔𝒄𝒓𝒊𝒃𝒂 𝒆𝒍 𝒄𝒐𝒅𝒊𝒈𝒐\n\n`
 	    txt += `      ‧̍̊·̊‧̥°̩̥˚̩̩̥͙°̩̥‧̥·̊‧̍̊ ♡ °̩̥˚̩̩̥͙°̩̥ ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙·̩̩̥͙*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙ °̩̥˚̩̩̥͙°̩̥ ♡ ‧̍̊·̊‧̥°̩̥˚̩̩̥͙°̩̥‧̥·̊‧̍̊`
-            txt += `*Nota:* Este Código solo funciona en el número que lo solicito`
+            txt += `*𝑨𝒗𝒊𝒔𝒐:* 𝑬𝒔𝒕𝒆 𝒄𝒐𝒅𝒊𝒈𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒆𝒏 𝒆𝒍 𝒏𝒖𝒎𝒆𝒓𝒐 𝒒𝒖𝒆 𝒍𝒐 𝒑𝒊𝒅𝒊𝒐`
          await parent.reply(m.chat, txt, m, rcanal)
          await parent.reply(m.chat, codeBot, m, rcanal)
         rl.close()
