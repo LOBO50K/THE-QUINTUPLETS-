@@ -4,17 +4,17 @@ let handler  = async (m, { conn, usedPrefix, command }) => {
 let img = await (await fetch(`https://i.ibb.co/jGsgr5M/file.jpg`)).buffer()
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-let txt = ` *Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D*
+let txt = ` * 【H】【O】【L】【A】 【T】【E】 【I】【N】【V】【I】【T】【A】【M】【O】【S】 【A】 【L】【O】【S】 【G】【R】【U】【P】【O】【S】 【O】【F】【I】【C】【I】【A】【L】【E】【S】 【D】【E】 【L】【A】 【B】【O】【T】 ฅ^•ﻌ•^ฅ*
 
 1-Grupo
-【 Indefinido   】
+🅽🅰︎🅺🅰︎🅽🅾︎ 🆇 🅶🆁🆄🅿︎🅾︎🆂 
 *✰* ${group}
 
 *─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
 
-➠ Enlace anulado? entre aquí! 
+➠ 𝑺𝒊 𝒆𝒍 𝒆𝒏𝒍𝒂𝒄𝒆 𝒏𝒐 𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒂 𝒆𝒏𝒕𝒓𝒆 𝒂𝒒𝒖𝒊 ⬃
 
-2.-Canal :
+2.-🅲🅰︎🅽🅰︎🅻 :
 𝑻𝒆𝒂𝒎 𝒏𝒂𝒌𝒂𝒏𝒐
 *✰* ${canal}
 
