@@ -1,6 +1,5 @@
 import moment from 'moment-timezone'
 import fetch from 'node-fetch'
-
 let handler = async (m, { conn, args }) => {
 let res = await fetch('https://github.com/LOBO50K/THE-QUINTUPLETS-')
 let json = await res.json()
