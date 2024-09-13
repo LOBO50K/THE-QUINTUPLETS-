@@ -64,7 +64,7 @@ npm start
 
 - Si el Bot tiene algún contactame ฅ^•ﻌ•^ฅ
 
-* <a href="https://wa.me/51913776697"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+* <a href="https://wa.me/5493405480284"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ---------
 
@@ -79,19 +79,19 @@ npm start
 
 ## Repo Stats 🔭
 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=StarlightsTeam&repo=Ai-Hoshino&theme=chartreuse-dark)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=LOBO50K&repo=THE-QUINTUPLETS-&theme=chartreuse-dark)
 
 ---------
 
 ## <img src="https://raw.githubusercontent.com/vilcajoal/vilcajoal/master/assets/octocat-anime.gif" alt="Github" width="44" height="44"> Github Stats
 
-![github stats](https://github-readme-stats.vercel.app/api?username=StarlightsTeam&show_icons=true&theme=chartreuse-dark)
-![github toplang](https://github-readme-stats.vercel.app/api/top-langs/?username=StarlightsTeam&layout=compact&theme=chartreuse-dark)
+![github stats](https://github-readme-stats.vercel.app/api?username=LOBO50K&show_icons=true&theme=chartreuse-dark)
+![github toplang](https://github-readme-stats.vercel.app/api/top-langs/?username=LOBO50K&layout=compact&theme=chartreuse-dark)
 
 ---------
 <div align="center">
   <h1 align="center">Editor y Propietario de la Bot</h1>
 
-<a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/BGmBdgx/file.jpg" width="300" height="300" alt="Lobo💞"/></a>
+<a href="https://github.com/LOBO50K"><img src="https://i.ibb.co/BGmBdgx/file.jpg" width="300" height="300" alt="Lobo💞"/></a>
 
 ` koruda - OFC / TEAM KORUDA OFC _ …⁠ᘛDaniel`
