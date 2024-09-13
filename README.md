@@ -1,32 +1,15 @@
-<h1 align="center">‧ 【 ᴛᴇᴀᴍ ᴋᴏʀᴜᴅᴀ ᴏꜰᴄ 】 ‧
-</p>
-<p>
-        <img src= "https://telegra.ph/file/aff4f06b811e3f98f1b56.jpg">
-    </p>
-    <p align="center">
-        <a href="#"><img title="simple-whatsapp-bot" src="https://img.shields.io/badge/-SIMPLE--WHATSAPP--BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-    </p>
-    <p>
-        <a href="https://github.com/StarlightsTeam"><img title="Author"    src="https://img.shields.io/badge/Author-おDaniel-purple.svg?style=for-the-badge&logo=github"></a>
-    </p>
-    <p>
-        <a href="https://github.com/StarlightsTeamollowers"><img title="Followers" src="https://img.shields.io/github/followers/StarlightsTeam?color=blue&style=flat-square"></a>
-        <a href="https://github.com/StarlightsTeam/Ai-Hoshino/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/StarlightsTeam/Ai-Hoshino?color=red&style=flat-square"></a>
-        <a href="https://github.com/StarlightsTeam/Ai-Hoshino/network/members"><img title="Forks" src="http://img.shields.io/github/forks/StarlightsTeam/Ai-Hoshino?color=red&style=flat-square"></a>
-        <a href="#"><img src="https://img.shields.io/badge/MANTENIMIENTO-SI-blue.svg"</a>
-        <img src="https://img.shields.io/github/repo-size/StarlightsTeam/Ai-Hoshino" /> <br>
-   </p>
-   <p>
-</h1>
 
----------
 
 ## <img src="https://i0.wp.com/i230.photobucket.com/albums/ee124/joaclint/joaclint_istgud/ruedas.gif" alt="Herramientas" width="35" height="35"> Herramientas
 
 ```bash
-> Termux
-> WhatsApp
-> 2 celulares o PC
+ Termux
+ WhatsApp
+ 2 ce## 💞 **`𝙽𝙰𝙺𝙰𝙽𝙾 - 𝙱𝙾𝚃 - 𝙾𝙵𝙲`**
+## 💞 **`EL BOT MAS DIVERTIDO DE WHATSAPP`**
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF0000&lines=Bienvenido+al+Repositorio;Nakano+-+Bot+-+OFC;Gracias+por+preferirnos;Creado+por+Lobo;💖+Sensei!!!;💞)](https://git.io/typing-svg)
+![Nakano](https://telegra.ph/file/ba3bb9737d903a0994570.jpg)
+lares o PC
 ```
 - Descarga termux dando clic [aqui](https://f-droid.org/repo/com.termux_118.apk)
 
