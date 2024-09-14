@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('Máximo *10* segundos')
       let img = await q.download?.()
-      if (!img) return conn.reply(m.chat, `🚩 Responda a una *Imagen* o *Vídeo.*`, m, rcanal)
+      if (!img) return conn.reply(m.chat, `·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙☆★☆★→𝑼𝒔𝒆 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒓𝒆𝒔𝒑𝒐𝒏𝒅𝒊𝒆𝒏𝒅𝒐 𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏 𝒐 𝒗𝒊𝒅𝒆𝒐←☆★☆★.*·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙`, m, rcanal)
       let out
       try {
         stiker = await sticker(img, false, global.packname, global.author)
