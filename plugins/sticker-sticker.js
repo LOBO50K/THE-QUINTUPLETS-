@@ -36,7 +36,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!stiker) stiker = e
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
-    else return conn.reply(m.chat, '🚩 Responda a una *Imagen* o *Vídeo.*', m, rcanal)
+    else return conn.reply(m.chat, '·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙☆★☆★→𝑼𝒔𝒆 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒓𝒆𝒔𝒑𝒐𝒏𝒅𝒊𝒆𝒏𝒅𝒐 𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏 𝒐 𝒗𝒊𝒅𝒆𝒐←☆★☆★.*·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙', m, rcanal)
   }
 }
 handler.help = ['sticker']
