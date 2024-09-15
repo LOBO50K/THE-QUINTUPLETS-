@@ -13,5 +13,5 @@ await conn.sendMini(m.chat, packname, dev, str, imagen1, imagen1, paypal, fkonta
 }
 handler.help = ['donar']
 handler.tags = ['info']
-handler.command = ['donar', 'apoyar']
+handler.command = ['donar', 'apoyar', 'PayPal']
 export default handler
