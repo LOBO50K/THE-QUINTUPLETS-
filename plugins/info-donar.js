@@ -12,6 +12,6 @@ Alias: Benja-123
 await conn.sendMini(m.chat, packname, dev, str, imagen1, imagen1, paypal, fkontak)
 }
 handler.help = ['donar']
-handler.tags = ['info']
+handler.tags = ['mantenimiento']
 handler.command = ['donar', 'apoyar', 'PayPal']
 export default handler
