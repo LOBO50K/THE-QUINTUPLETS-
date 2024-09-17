@@ -180,7 +180,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
    //await conn.sendAi(m.chat, botname, textbot, text.trim(), img, img, canal, estilo)
 
   } catch (e) {
-    conn.reply(m.chat, ' 𝑯𝒐𝒍𝒂 %name 𝑨𝒒𝒖𝒊 𝒕𝒊𝒆𝒏𝒆𝒔 𝒎𝒊 𝒎𝒆𝒏𝒖 💞', m)
+    conn.reply(m.chat, '╚═ ✰ ═ ✮ :star: ✮ ═ ✰ ═╝ 𝑯𝒐𝒍𝒂 𝑪𝒐𝒎𝒐 𝒆𝒔𝒕𝒂𝒔 𝒆𝒍 𝒅𝒊𝒂 𝒅𝒆 𝒉𝒐𝒚? ▒▒▒▒▒▒▒▒▒▒ 100% ᴄᴏᴍᴘʟᴇᴛᴇ! 𝑨𝒒𝒖𝒊 𝒕𝒊𝒆𝒏𝒆𝒔 𝒎𝒊 𝒎𝒆𝒏𝒖 💞', m)
     throw e
   }
 }
