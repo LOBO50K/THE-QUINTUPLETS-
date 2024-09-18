@@ -32,15 +32,14 @@ const defaultMenu = {
 
  "> /)_/)
 (,,>.<)  <(𝑯𝒐𝒍𝒂!)
-/ >❤️ *%name* 𝑴𝒊 𝒏𝒐𝒎𝒃𝒓𝒆 𝒆𝒔 *𝑵𝒂𝒌𝒂𝒏𝒐*, %greeting "
+/ >❤️ 𝑴𝒊 𝒏𝒐𝒎𝒃𝒓𝒆 𝒆𝒔 *𝑵𝒂𝒌𝒂𝒏𝒐*, %greeting "
 
  ╭────═[💞𝕴𝖓𝖋𝖔-𝕭𝖔𝖙💖]═─────⋆
-╭══• ೋ•✧๑♡๑✧•ೋ •══╮
-      *𝕸𝖔𝖉𝖔* : Público
-      *𝕭𝖆𝖎𝖑𝖊𝖞𝖘* : Multi Device
-      *𝕿𝖎𝖊𝖒𝖕𝖔* : %muptime
-      *𝖚𝖘𝖚𝖆𝖗𝖎𝖔𝖘 𝕽𝖊𝖌* : %totalreg
-╰══• ೋ•✧๑♡๑✧•ೋ •══╯
+   ╭══• ೋ•✧๑♡๑✧•ೋ •══╮
+  *𝑪𝒂𝒏𝒂𝒍 𝑶𝒇𝒊𝒄𝒊𝒂𝒍* : https://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K
+  *𝑺𝒐𝒑𝒐𝒓𝒕𝒆* : https://chat.whatsapp.com/LlWSHEMR67ZE8t8mfLm8fu
+  *𝑪𝒐𝒎𝒖𝒏𝒊𝒅𝒂𝒅 𝑵𝒂𝒌𝒂𝒏𝒐* :  https://chat.whatsapp.com/KdyBB9lfXJs0GAiheniJ86 
+    ╰══• ೋ•✧๑♡๑✧•ೋ •══╯
 %readmore
 ╭────═[💌𝕴𝖓𝖋𝖔-𝖀𝖘𝖊𝖗💘]═─────⋆
 ╭══• ೋ•✧๑♡๑✧•ೋ •══╮
