@@ -106,10 +106,10 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                 },
                 interactiveMessage: proto.Message.InteractiveMessage.fromObject({
                     body: proto.Message.InteractiveMessage.Body.create({
-                        text: "Hasil pencarian selesai..."
+                        text: "Cargando opciones..."
                     }),
                     footer: proto.Message.InteractiveMessage.Footer.create({
-                        text: '乂 Y O U T U B E | @Ling Xuan' // Adjust your watermark
+                        text: '乂 Y O U T U B E | ♡ Lobo' // Adjust your watermark
                     }),
                     header: proto.Message.InteractiveMessage.Header.create({
                         hasMediaAttachment: false
@@ -124,6 +124,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
     await conn.relayMessage(m.chat, bot.message, { messageId: bot.key.id });
 }
-handler.command = ['b']
+handler.command = ['sh']
 
 export default handler;
