@@ -1,4 +1,4 @@
-import moment from 'moment-timezone'
+/*import moment from 'moment-timezone'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args }) => {
@@ -24,4 +24,4 @@ handler.help = ['script']
 handler.tags = ['main']
 handler.command = ['script', 'sc', 'repo', 'repository']
 handler.register = true 
-export default handler
+export default handler */
