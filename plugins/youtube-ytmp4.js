@@ -1,4 +1,4 @@
-/*import Starlights from '@StarlightsTeam/Scraper'
+import Starlights from '@StarlightsTeam/Scraper'
 import fetch from 'node-fetch' 
 let limit = 100
 
@@ -28,7 +28,7 @@ handler.command = ['ytmp4', 'ytv', 'yt']
 //handler.limit = 1
 handler.register = true 
 
-export default handler */
+export default handler
 
 const fetch = require("node-fetch")
 
