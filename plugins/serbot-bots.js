@@ -13,7 +13,7 @@ const message = Array.from(uniqueUsers.values()).map((user, index) => `┌  ✩ 
   
 const replyMessage = message.length === 0 ? "" : message
 const totalUsers = uniqueUsers.size;
-const responseMessage = `${` –  *⋆·˚ ༘ * 🔭𒀱 ╚════   ❀ ✿ ღ𝑩𝒐𝒕𝒔ღ ❀ ✿   ════╝ 𒀱☆。*。☆。。* 。☆*\n·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n${replyMessage.trim()}`.trim()}`
+const responseMessage = `${` –  *⋆·˚ ༘ * 🔭𒀱 ▰▱▰▱▰▱▰▱▰▱▰▱▰▱    ❀ ✿ ღ𝑩𝒐𝒕𝒔ღ ❀ ✿    𒀱☆。*。☆。。* 。☆*\n·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n${replyMessage.trim()}`.trim()}`
   
 let img = await (await fetch(`https://i.ibb.co/cvmV7CV/file.jpg`)).buffer()
 
