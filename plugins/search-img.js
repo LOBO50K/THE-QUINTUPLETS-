@@ -1,4 +1,4 @@
-import {googleImage} from '@StarlightsTeam/Scraper';
+import {googleImage} from '@bochilteam/scraper';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (!text) return conn.reply(m.chat, `*🌸 Uso Correcto: ${usedPrefix + command} Nakano NIno*`, m, rcanal);
 conn.reply(m.chat, '🌸 *Descargando su imagen...*', m, {
