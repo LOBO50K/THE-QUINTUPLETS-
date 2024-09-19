@@ -1,4 +1,4 @@
-import Starlights from '@StarlightsTeam/Scraper'
+/*import Starlights from '@StarlightsTeam/Scraper'
 import fetch from 'node-fetch' 
 let limit = 100
 
@@ -28,4 +28,78 @@ handler.command = ['ytmp4', 'ytv', 'yt']
 //handler.limit = 1
 handler.register = true 
 
-export default handler
+export default handler */
+
+const fetch = require("node-fetch")
+
+module.exports = {
+
+  name: "ytmp4",
+
+  alias: ["youtubemp4", "youtubeaudio", "ytv", "ytvideo"],
+
+  category: "downloader",
+
+  use: "<link>",
+
+  example: "%cmd https://youtube.com/",
+
+  cooldown: 5,
+
+  isSpam: true,
+
+  isQuery: true,
+
+  async run({ msg, conn }, { query }) {
+
+      var ggapi = `https://api.dorratz.com/ytdl/ytmp4-mp3?url=${encodeURIComponent(query)}`
+
+
+
+  const response = await fetch(ggapi)
+
+  if (!response.ok) {
+
+    console.log('Error searching for song:', response.statusText)
+
+    throw 'Error searching for song'
+
+  }
+
+  const data = await response.json()
+
+  if (!data.status) {
+
+    throw '❎ Error: ' + data.msg
+
+  }
+
+
+
+  const caption = `✼ ••๑⋯❀ Y O U T U B E ❀⋯⋅๑•• ✼
+
+	  
+
+  ❏ Title: ${data.data.title}
+
+  ❒ Link: ${query}
+
+  ⊱─ BY DIEGO-OFC </> ⊰━─⊰`
+
+
+
+  let vres = data.data.video.url 
+
+
+
+  let vid = await fetch(vres)
+
+  const vidBuffer = await vid.buffer()
+
+
+
+  conn.sendFile(msg.from, vidBuffer, `error.mp4`, caption, msg, false, { asDocument: chat.useDocument })
+
+    }
+
+}
