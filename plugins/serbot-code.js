@@ -53,8 +53,8 @@ let handler = async (
   async function rembots() {
     let authFolderB = crypto.randomBytes(10).toString("hex").slice(0, 8);
 
-    if (!fs.existsSync("./rembots/" + authFolderB)) {
-      fs.mkdirSync("./rembots/" + authFolderB, { recursive: true });
+    if (!fs.existsSync("./StarlightsTeam/" + authFolderB)) {
+      fs.mkdirSync("./StarlightsTeam/" + authFolderB, { recursive: true });
     }
     if (args[0]) {
       fs.writeFileSync(
@@ -128,7 +128,7 @@ let handler = async (
         parent.sendButton2(
           m.chat,
           `‹𝟹 𝙲𝙾𝙳𝙴: *${codeBot}*\n\n${mssg.botinfo}`,
-          mssg.rembot,
+          mssg.StarlightsTeam,
           "https://i.ibb.co/k0g6j3L/file.jpg",
           [],
           codeBot,
@@ -201,7 +201,7 @@ let handler = async (
               command +
               " " +
               Buffer.from(
-                fs.readFileSync("./rembots/" + authFolderB + "/creds.json"),
+                fs.readFileSync("./StarlightsTeam/" + authFolderB + "/creds.json"),
                 "utf-8",
               ).toString("base64"),
           },
