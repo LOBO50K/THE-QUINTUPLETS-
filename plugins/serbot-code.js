@@ -89,7 +89,7 @@ let handler = async (
       logger: pino({ level: "silent" }),
       printQRInTerminal: false,
       mobile: MethodMobile,
-      browser: ["Ubuntu", "Chrome", "20.0.04", "REM-BOT"],
+      browser: ["Ubuntu", "Chrome", "20.0.04", "NAKANO-BOT"],
       auth: {
         creds: state.creds,
         keys: makeCacheableSignalKeyStore(
