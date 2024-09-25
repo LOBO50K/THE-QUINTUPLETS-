@@ -1,6 +1,6 @@
 import Starlights from '@StarlightsTeam/Scraper'
 import fetch from 'node-fetch' 
-let limit = 100
+let limit = 500
 
 let handler = async (m, { conn: star, args, text, isPrems, isOwner, usedPrefix, command }) => {
 if (!args[0].match(/youtu/gi)) return star.reply(m.chat, '🚩 Ingresa el enlace del vídeo de YouTube junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://youtu.be/QSvaCSt8ixs`, m, rcanal)
