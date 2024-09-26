@@ -30,7 +30,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 }
 
 handler.help = ['triste @tag'];
-handler.tags = ['fun'];
+handler.tags = ['nakano react'];
 handler.command = ['sad','triste'];
 handler.group = true;
 
