@@ -29,7 +29,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 handler.help = ['feliz @tag'];
 handler.tags = ['nakano react'];
-handler.command = ['cum','happy'];
+handler.command = ['feliz','happy'];
 handler.group = true;
 
 export default handler;
