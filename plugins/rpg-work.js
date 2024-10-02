@@ -8,10 +8,10 @@ let user = global.db.data.users[m.sender]
     conn.reply(m.chat, `🚩 Espera ⏱ *${tiempoRestante}* para volver a Trabajar.`, m, rcanal)
     return
   }
-  let resultado = Math.floor(Math.random() * 5000)
+  let resultado = Math.floor(Math.random() * 2500)
   cooldowns[m.sender] = Date.now()
-  await conn.reply(m.chat, `🚩 ${pickRandom(works)} *${toNum(resultado)}* ( *${resultado}* ) XP 💫.`, m, rcanal)
-  user.exp += resultado
+  await conn.reply(m.chat, `🚩 ${pickRandom(works)} *${toNum(resultado)}* ( *${resultado}* ) ᪥Yenes.`, m, rcanal)
+  user.limit += resultado
 }
 
 handler.help = ['work']
@@ -44,7 +44,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())];
 }
 
-// Thanks to FG98
+
 const works = [
    "Trabajas como cortador de galletas y ganas",
    "Trabaja para una empresa militar privada, ganando",
@@ -79,4 +79,4 @@ const works = [
    "Trabajas como zoólogo y ganas",
    "Vendiste sándwiches de pescado y obtuviste",
    "Reparas las máquinas recreativas y recibes",
-] 
+]
