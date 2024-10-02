@@ -2,21 +2,21 @@ let cooldowns = {}
 
 let handler = async (m, { conn, isPrems }) => {
 let user = global.db.data.users[m.sender]
-  let tiempoEspera = 2 * 00
+  let tiempoEspera = 1 * 58
   if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
     const tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    conn.reply(m.chat, `᪥ Debes espera *${tiempoRestante}* para volver a usar *slut* .`, m, rcanal)
+    conn.reply(m.chat, `᪥ Debes espera *${tiempoRestante}* para volver a usar *slut* .`)
     return
   }
   let resultado = Math.floor(Math.random() * 2500)
   cooldowns[m.sender] = Date.now()
-  await conn.reply(m.chat, `᪥ ${pickRandom(works)} *${toNum(resultado)}* ( *${resultado}* ) *Yenes* .`, m, rcanal)
+  await conn.reply(m.chat, `᪥ ${pickRandom(works)} *${toNum(resultado)}* ( *${resultado}* ) *Yenes* .`)
   user.limit += resultado
 }
 
 handler.help = ['slut']
-handler.tags = ['rpg']
-handler.command = ['slut']
+handler.tags = ['juegos']
+handler.command = ['slut','prost']
 handler.register = true 
 export default handler
 
