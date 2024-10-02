@@ -1,5 +1,5 @@
 // Handler para los comandos de banco
-let handler = async (m, { conn, usedPrefix, command, text }) => {
+/*let handler = async (m, { conn, usedPrefix, command, text }) => {
     let user = global.db.data.users[m.sender];
 
     // Comando .banco
