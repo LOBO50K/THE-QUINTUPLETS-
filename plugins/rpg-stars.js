@@ -14,7 +14,7 @@ let handler = async (m, {conn, usedPrefix}) => {
         txt += `└  ✩  *☆ exp* : ${toNum(user.exp)} ( *${user.exp}* )`
     let mentionedJid = [who]
         
-await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null)
 }
 handler.help = ['Yenes']
 handler.tags = ['rpg']
