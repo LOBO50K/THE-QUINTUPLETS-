@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   let tiempoEspera = 5 * 60
   if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
     let tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    m.reply(`🚩 Ya has cometido un Crimen recientemente, espera *⏱ ${tiempoRestante}* para cometer tu próximo Crimen y evitar ser atrapado.`)
+    m.reply(`᪥ Ya has cometido un Crimen recientemente, espera *${tiempoRestante}* para cometer tu próximo Crimen y evitar ser atrapado.`)
     return
   }
   
@@ -36,7 +36,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   users[senderId].limit += amountTaken
   users[randomUserId].limit -= amountTaken
   conn.sendMessage(m.chat, {
-        text: `🚩¡Lograste cometer tu crimen con exito!, acabas de robar *${amountTaken} 💴 Zenis* a @${randomUserId.split("@")[0]}\n\nSe suman *+${amountTaken} 💴 Zenis* a ${senderName}.`,
+        text: `᪥¡Lograste cometer tu crimen con exito!, acabas de robar *¥${amountTaken} Yenes* a @${randomUserId.split("@")[0]}\n\nSe suman *+¥${amountTaken} Yenes* a ${senderName}.`,
   contextInfo: { 
   mentionedJid: [randomUserId],
   }
@@ -46,7 +46,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   case 1:
   let amountSubtracted = Math.min(Math.floor(Math.random() * (senderLimit - minAmount + 1)) + minAmount, maxAmount)
   users[senderId].limit -= amountSubtracted
-  conn.reply(m.chat, `🚩 No fuiste cuidadoso y te atraparon mientras cometias tu cirme, se restaron *-${amountSubtracted} 💴 Zenis* a ${senderName}.`, m)
+  conn.reply(m.chat, `᪥ No fuiste cuidadoso y te atraparon mientras cometias tu crimen, se restaron *-¥${amountSubtracted} Yenes* a ${senderName}.`, m)
   break
 
   case 2:
@@ -54,7 +54,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   users[senderId].limit += smallAmountTaken
   users[randomUserId].limit -= smallAmountTaken
   conn.sendMessage(m.chat, {
-  text: `🚩 Lograste cometer tu crimen con exito, pero te descubrieron y solo lograste tomar *${smallAmountTaken} 💴 Zenis* de @${randomUserId.split("@")[0]}\n\nSe suman *+${smallAmountTaken} ⭐ Estrellas* a ${senderName}.`,
+  text: `᪥ Lograste cometer tu crimen con exito, pero te descubrieron y solo lograste tomar *¥${smallAmountTaken} Yenes* de @${randomUserId.split("@")[0]}\n\nSe suman *+¥${smallAmountTaken} Yenes* a ${senderName}.`,
   contextInfo: { 
   mentionedJid: [randomUserId],
   }
