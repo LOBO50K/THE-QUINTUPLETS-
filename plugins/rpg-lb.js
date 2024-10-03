@@ -12,7 +12,7 @@ let text = `
 〔❨᪥❩〕Los usuarios con más *Yenes* son:
 
 ᪥ Tú eres el *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length}*
-᪥ ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} ¥*`).join`\n᪥│ `}
+᪥ ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` :                *Total* : '@'}${jid.split`@`[0]} *${limit} ¥*`).join`\n᪥ ⇢ `}
 
 `
   m.reply(text, null, { mentions: conn.parseMention(text) })
