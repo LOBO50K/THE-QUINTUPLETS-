@@ -14,11 +14,11 @@ await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img, canal, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 28) {
-    let bye = `╰⊱⭐⊱╮꧁ ꧂╭⊱⭐≺ *${botname}* \n│「 ℬᎽƏ ℬᎽƏ  」\n•——————•°•✿•°•——————• 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  \n   │✑ ዞᏜᏕʈᏜ ℘ℛ⋆ɲʈ⋆   ✧･ﾟ: *✧･ﾟ:* 　💌　*:･ﾟ✧*:･ﾟ✧ ⳹`
+    let bye = `\n᪥ *Hasta pronto*\n᪥ *${groupMetadata.subject}*\n \n `
 await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 32) {
-    let kick = `╰⊱⭐⊱╮꧁ ꧂╭⊱⭐≺ *${botname}* \n│「 ɲ⋆Ꮥ ʋƏm⋆Ꮥ 」\n•——————•°•✿•°•——————• 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  \n   │✑ ᏜᗬᎥ⋆Ꮥ   0:58 ━━❍─────── 3:35⳹`
+    let kick = `\n᪥ *Hasta pronto*\n᪥ *${groupMetadata.subject}*\n\n`
 await conn.sendAi(m.chat, botname, textbot, kick, img, img, canal, estilo)
 }}
