@@ -33,7 +33,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
       txt += `᪥`
       txt += ` https://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K `
       txt += ` ↻ ◁ II ▷ ↺ 1:35 ───ㅇ───── 3:47`
-await conn.sendAi(m.chat, botname, textbot, txt, img, img, canal, m)
+await conn.sendAi(m.chat, botname, textbot, txt, img, img, m)
 await m.react('⚘')
 }
 handler.help = ['reg'].map(v => v + ' *<nombre.edad>*')
