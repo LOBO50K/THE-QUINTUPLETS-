@@ -77,15 +77,15 @@ npm start
 
 ---------
 
-## Repo Stats 🔭
+## Repo Nakano
 
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=LOBO50K&repo=THE-QUINTUPLETS-&theme=chartreuse-dark)
 
 ---------
 
-## <img src="https://raw.githubusercontent.com/vilcajoal/vilcajoal/master/assets/octocat-anime.gif" alt="Github" width="44" height="44"> Github Stats
+## <img src="https://raw.githubusercontent.com/vilcajoal/vilcajoal/master/assets/octocat-anime.gif" alt="Github" width="44" height="44"> Github Nakano
 
-![github stats](https://github-readme-stats.vercel.app/api?username=LOBO50K&show_icons=true&theme=chartreuse-dark)
+![github Nakano](https://github-readme-stats.vercel.app/api?username=LOBO50K&show_icons=true&theme=chartreuse-dark)
 ![github toplang](https://github-readme-stats.vercel.app/api/top-langs/?username=LOBO50K&layout=compact&theme=chartreuse-dark)
 
 ---------
@@ -94,4 +94,4 @@ npm start
 
 <a href="https://github.com/LOBO50K"><img src="https://i.ibb.co/BGmBdgx/file.jpg" width="300" height="300" alt="Lobo💞"/></a>
 
-` koruda - OFC / TEAM KORUDA OFC _ …⁠ᘛDaniel`
+` Nakano Bot / Team Nakano / Powered By:Lobo`
