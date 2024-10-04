@@ -5,7 +5,7 @@ import { sticker } from '../lib/sticker.js';
 
 let handler = async (m, { conn, usedPrefix }) => {
     let who;
-    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m. ? m.: false;
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender: false;
     else who = m.chat;
     if (!who) throw 'Etiqueta o menciona a alguien';
 
@@ -39,7 +39,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let pp19 = 'https://telegra.ph/file/af0fe6eb00bd0a8a9e3a0.mp4'
     const videos = [pp, pp2, pp3, pp4, pp5, pp6 ,pp7, pp8, pp9 ,pp10, pp12, pp13, pp14, pp15, pp16, pp17, pp18, pp19];
     const video = videos[Math.floor(Math.random() * videos.length)];
-    conn.sendMessage(m.chat, { video: { url: video }, gifPlayback: true, caption:str, mentions: [m.sender] },{ m: estilo })
+    conn.sendMessage(m.chat, { video: { url: video }, gifPlayback: true, caption:str, mentions: [m.sender] },{ quoted: estilo })
     };
    
   //  m.react('💞');
