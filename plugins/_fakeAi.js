@@ -14,15 +14,15 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
           "groupJid": "6285240750713-1610340626@g.us",
           "inviteCode": "mememteeeekkeke",
           "groupName": "P",
-          "caption": "Hello, I'm Ai Hoshino",
+          "caption": "Hello, I'm Nakano",
           "jpegThumbnail": await (await fetch(pp)).buffer()
         }
       }
     }
     
-    conn.sendMessage(m.chat, { text: 'Hola soy Ai Hoshino, ¿Cómo puedo ayudarte?' }, { quoted: anu })
+    conn.sendMessage(m.chat, { text: 'Hola soy Nakano-Bot, ¿Cómo puedo ayudarte?' }, { quoted: anu })
   } catch (error) {
-    conn.sendMessage(m.chat, 'Hola soy Ai Hoshino, ¿Cómo puedo ayudarte?', 'conversation', { quoted: m })
+    conn.sendMessage(m.chat, 'Hola soy Nakano-Bot, ¿Cómo puedo ayudarte?', 'conversation', { quoted: m })
   }
 }
 
