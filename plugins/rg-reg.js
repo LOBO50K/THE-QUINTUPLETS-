@@ -28,6 +28,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
       txt += `᪥  ·˚ ༘₊  *𝑬𝒅𝒂𝒅* : ${age} años\n`
       txt += `᪥  ·˚ ༘₊  *𝑵𝒖𝒎𝒆𝒓𝒐 𝒅𝒆 𝒔𝒆𝒓𝒊𝒆*\n`
       txt += `᪥  ·˚ ༘₊  ${sn}`
+      txt += ``
       txt += `𝑵𝒐 𝒐𝒍𝒗𝒊𝒅𝒆𝒔 𝒂𝒑𝒐𝒚𝒂𝒓𝒏𝒐𝒔 𝒔𝒊𝒈𝒖𝒊𝒆𝒏𝒅𝒐 𝒏𝒖𝒆𝒂𝒕𝒓𝒐 𝒄𝒂𝒏𝒂𝒍`
       txt += ``
       txt += ` https://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K `
