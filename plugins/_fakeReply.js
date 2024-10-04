@@ -17,7 +17,7 @@ let img = await (await fetch(`https://tinyurl.com/24tl693s`)).buffer()
 
  global.adReply = {
 	    contextInfo: { 
-             forwardingScore:, 
+             forwardingScore:9999, 
                  isForwarded: false, 
                     externalAdReply: {
 				    showAdAttribution: true,
