@@ -32,8 +32,8 @@ global.prems = []
 
 global.packname = ``
 global.author = '{\n "𝑩𝒐𝒕": {\n   "𝑵𝒂𝒎𝒆": "𝑵𝒂𝒌𝒂𝒏𝒐",\n     "𝑨𝒖𝒕𝒐𝒓": "𝑳𝒐𝒃𝒐",\n   "𝑬𝒔𝒕𝒂𝒅𝒐": "𝑨𝒄𝒕𝒊𝒗𝒂"\n }\n}'
-global.wait = '🐢 *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛo...*'
-global.botname = '( ˘ ³˘)♥ 𝑵𝒂𝒌𝒂𝒏𝒐-𝑩𝒐𝒕'
+global.wait = ' *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛo...*'
+global.botname = ''
 global.textbot = `𝑵𝒂𝒌𝒂𝒏𝒐-𝑩𝒐𝒕`
 global.listo = '*𝑨𝒒𝒖𝒊 𝒕𝒊𝒆𝒏𝒆𝒔*'
 global.namechannel = '🂪 𝑻𝑬𝑨𝑴 𝑵𝑨𝑲𝑨𝑵𝑶 🂡'
