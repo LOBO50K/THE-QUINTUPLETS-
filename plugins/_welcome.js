@@ -8,17 +8,17 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let chat = global.db.data.chats[m.chat]
 
   if (chat.bienvenida && m.messageStubType == 27) {
-    let bienvenida = `\n ᪥ *Bienvenido* a\n ᪥ *${groupMetadata.subject}* \n \n ᪥ @${m.messageStubParameters[0].split`@`[0]}\n> Puedes usar #menu/#help para ver la lista de comandos`
+    let bienvenida = `\n ᪥ *Bienvenido* a\n ᪥ *${groupMetadata.subject}* \n \n ᪥ @${m.messageStubParameters[0].split`@`[0]}\n> ✎𝑷𝒖𝒆𝒅𝒆𝒔 𝒖𝒔𝒂𝒓 #𝒎𝒆𝒏𝒖/#𝒉𝒆𝒍𝒑 𝒑𝒂𝒓𝒂 𝒗𝒆𝒓 𝒍𝒂 𝒍𝒊𝒔𝒕𝒂 𝒅𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔\n> 𝑳𝒊𝒏𝒌 𝑵𝒂𝒌𝒂𝒏𝒐:https://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K`
     
-await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img, canal, estilo)
+await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 28) {
-    let bye = `\n᪥ *Hasta pronto*\n᪥ *${groupMetadata.subject}*\n \n `
-await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal, estilo)
+    let bye = `\n᪥ *Adiós* de\n*${groupMetadata.subject}*\n \n♡ @${m.messageStubParameters[0].split`@`[0]}\n(づ ◕‿◕ )づ Esperamos verte pronto!\n\n> ✎𝑷𝒖𝒆𝒅𝒆𝒔 𝒖𝒔𝒂𝒓 #𝒎𝒆𝒏𝒖/#𝒉𝒆𝒍𝒑 𝒑𝒂𝒓𝒂 𝒗𝒆𝒓 𝒍𝒂 𝒍𝒊𝒔𝒕𝒂 𝒅𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔\n> 𝑳𝒊𝒏𝒌 𝑵𝒂𝒌𝒂𝒏𝒐:https://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K`
+await conn.sendAi(m.chat, botname, textbot, bye, img, img, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 32) {
-    let kick = `\n᪥ *Hasta pronto*\n᪥ *${groupMetadata.subject}*\n\n`
-await conn.sendAi(m.chat, botname, textbot, kick, img, img, canal, estilo)
+    let kick = `\n᪥ *Hasta pronto*\n᪥ *${groupMetadata.subject}*\n\n♡ @${m.messageStubParameters[0].split`@`[0]}\n(づ ◕‿◕ )づ Esperamos verte pronto!\n\n> ✎𝑷𝒖𝒆𝒅𝒆𝒔 𝒖𝒔𝒂𝒓 #𝒎𝒆𝒏𝒖/#𝒉𝒆𝒍𝒑 𝒑𝒂𝒓𝒂 𝒗𝒆𝒓 𝒍𝒂 𝒍𝒊𝒔𝒕𝒂 𝒅𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔\n> 𝑳𝒊𝒏𝒌 𝑵𝒂𝒌𝒂𝒏𝒐:https://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K`
+await conn.sendAi(m.chat, botname, textbot, kick, img, img, estilo)
 }}
