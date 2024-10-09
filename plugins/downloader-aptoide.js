@@ -1,41 +1,25 @@
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `Debes proporcionar el nombre de una aplicación para buscar.\nEjemplo:\n${usedPrefix + command} WhatsApp`;
+let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
+if (!args[0]) throw `\`\`\`[ ¥ ] Ingresa el nombre de la aplicación que quieres descargar. Ejemplo:\n${usedPrefix + command} WhatsApp\`\`\``
+let res = await fetch(`https://api.dorratz.com/v2/apk-dl?text=${args[0]}`);
+let result = await res.json();
+let { name, size, lastUpdate, icon } = result;
+let URL = result.dllink
+let packe = result.package
+let texto = `  ❯───「 𝑫𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒔 𝑵𝒂𝒌𝒂𝒏𝒐 」───❮
+    💌 𝐍𝐨𝐦𝐛𝐫𝐞 : ⇢ ${name} 📩
+    💟 𝐓𝐚𝐦𝐚𝐧̃𝐨 : ⇢ ${size} ⚖️
+    💞 𝐏𝐚𝐜𝐤𝐚𝐠𝐞 : ⇢ ${packe} 📦
+    💖 𝐀𝐜𝐭𝐮𝐚𝐥𝐢𝐳𝐚𝐝𝐨 : ⇢ ${lastUpdate} 🗓️
+    
+♡ *𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒆𝒔𝒑𝒆𝒓𝒆 𝒖𝒏 𝒎𝒐𝒎𝒆𝒏𝒕𝒐 𝒆𝒔𝒕𝒂𝒎𝒐𝒔 𝒆𝒏𝒗𝒊𝒂𝒏𝒅𝒐 𝒔𝒖 𝑨𝑷𝑲* . . .`
+await conn.sendFile(m.chat, icon, name + '.jpg', texto, m)
 
-    try {
-        await m.reply(`🔍 Buscando la aplicación "${text}"...`);
-
-        let res = await fetch(`https://api.diego-ofc.site/v2/apk-dl?text=${encodeURIComponent(text)}`);
-        if (!res.ok) throw `🚩 Error en la respuesta de la API: ${res.status}`;
-
-        let json = await res.json();
-        // Asegúrate de acceder correctamente a la propiedad de la aplicación
-        if (!json.name || !json.dllink || !json.icon) throw `🚩 No se encontraron aplicaciones relacionadas con "${text}".`;
-let nombre = json.name;
-        let package2 = json.package
-        let link = json.dllink;
-        let imageUrl = json.icon;
-        let lastupdate2 = json.lastUpdate;
-        let icono2 = json.icon
-        let caption = `*Nombre:* ${nombre}\n`;
-       caption += `*package*: ${package2}\n`
-        caption += `*Enlace:* ${link}\n`;
-       caption+=  `*icono:*  ${icono2}\n`
-        caption += `*Lasupdate:* ${lastupdate2}\n`
-        caption += `*Descargando APK...*`;
-
-        await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: caption }, { quoted: m });
-        
-        // No necesitas volver a hacer un fetch en el link, ya que es un enlace directo
-        await conn.sendMessage(m.chat, { document: { url: link }, mimetype: 'application/vnd.android.package-archive', fileName: `${nombre}.apk`, caption: null }, { quoted: m });
-
-    } catch (e) {
-        console.error(e);
-        throw `🍟 Hubo un error al buscar o descargar la aplicación "${text}": ${e.message || e}`;
-    }
+await conn.sendMessage(m.chat, { document: { url: URL }, mimetype: 'application/vnd.android.package-archive', fileName: name + '.apk', caption: ''}, { quoted: m });
 }
+handler.tags = ['descargas']
+handler.help = ['apkmod']
+handler.command = /^(apkmod|apk|dapk2|aptoide|aptoidedl)$/i
+handler.register = true
+handler.estrellas = 1
 
-handler.help = ['apk'].map(v => v + ' <nombre de la aplicación>');
-handler.tags = ['search', 'dl'];
-handler.command = /^(apk|apkd|apkdownload)$/i;
-
-export default handler;
+export default handler
