@@ -11,12 +11,13 @@ import moment from 'moment-timezone'
 import NodeCache from 'node-cache'
 import readline from 'readline'
 import qrcode from "qrcode"
+import crypto from 'crypto'
 import fs from "fs"
-import pino from 'pino'
-import * as ws from 'ws'
+import pino from 'pino';
+import * as ws from 'ws';
 const { CONNECTING } = ws
 import { Boom } from '@hapi/boom'
-import { makeWASocket } from '../lib/simple.js'
+import { makeWASocket } from '../lib/simple.js';
 
 if (global.conns instanceof Array) console.log()
 else global.conns = []
@@ -24,12 +25,12 @@ else global.conns = []
 let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => {
   let parent = args[0] && args[0] == 'plz' ? _conn : await global.conn
   if (!((args[0] && args[0] == 'plz') || (await global.conn).user.jid == _conn.user.jid)) {
-	return m.reply(`Este comando solo puede ser usado en el bot principal! wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix}code`)
+        return m.reply(`Este comando solo puede ser usado en el bot principal! wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix}code`)
 }
 
   async function serbot() {
 
-  let authFolderB = m.sender.split('@')[0]
+  let authFolderB = crypto.randomBytes(10).toString('hex').slice(0, 8)
 
     if (!fs.existsSync("./serbot/"+ authFolderB)){
         fs.mkdirSync("./serbot/"+ authFolderB, { recursive: true });
@@ -85,17 +86,14 @@ if (methodCode && !conn.authState.creds.registered) {
     setTimeout(async () => {
         let codeBot = await conn.requestPairingCode(cleanedNumber);
         codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
-        let txt = ` –  *𝑺 𝑬 𝑹 𝑩 𝑶 𝑻  ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙ ✩*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙   𝑺 𝑼 𝑩 𝑩 𝑶 𝑻*\n\n`
-	    txt += `           .・。.・゜✭・❤・✫・゜・。.`
-	    txt += `               ·̩̩̥͙＊*•̩̩͙✩•̩̩͙*˚˚*•̩̩͙✩•̩̩͙*˚＊·̩̩̥͙`
-            txt += `┌    *𝑼𝒔𝒂 𝒆𝒂𝒕𝒆 𝒄𝒐𝒅𝒊𝒈𝒐 𝒑𝒂𝒓𝒂 𝒄𝒐𝒎𝒃𝒆𝒓𝒕𝒊𝒓𝒕𝒆 𝒆𝒏 𝒔𝒖𝒃-𝒃𝒐𝒕 𝒅𝒆 𝒍𝒂 𝒏𝒂𝒌𝒂𝒏𝒐*\n`
-            txt += `│   ˚₊· ͟͟͞͞➳❥ Pasos\n`
-            txt += `│   ˚₊· ͟͟͞͞➳❥ *1* : 𝑯𝒂𝒈𝒂 𝒄𝒍𝒊𝒄𝒌 𝒆𝒏 𝒍𝒐𝒔 3 𝒑𝒖𝒏𝒕𝒐𝒔\n`
-            txt += `│   ˚₊· ͟͟͞͞➳❥ *2* : 𝑻𝒐𝒒𝒖𝒆 𝒅𝒊𝒔𝒑𝒐𝒔𝒊𝒕𝒊𝒗𝒐𝒔 𝒗𝒊𝒏𝒄𝒖𝒍𝒂𝒅𝒐𝒔\n`
-            txt += `│   ˚₊· ͟͟͞͞➳❥ *3* : 𝑺𝒆𝒍𝒆𝒄𝒄𝒊𝒐𝒏𝒂 *𝑽𝒊𝒏𝒄𝒖𝒍𝒂𝒓 𝒄𝒐𝒏 𝒆𝒍 𝒏𝒖𝒎𝒆𝒓𝒐 𝒅𝒆 𝒕𝒆𝒍𝒆𝒇𝒐𝒏𝒐*\n` 
-            txt += `└  ˚₊· ͟͟͞͞➳❥  *4* : 𝑬𝒔𝒄𝒓𝒊𝒃𝒂 𝒆𝒍 𝒄𝒐𝒅𝒊𝒈𝒐\n\n`
-	    txt += `      ‧̍̊·̊‧̥°̩̥˚̩̩̥͙°̩̥‧̥·̊‧̍̊ ♡ °̩̥˚̩̩̥͙°̩̥ ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙·̩̩̥͙*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙ °̩̥˚̩̩̥͙°̩̥ ♡ ‧̍̊·̊‧̥°̩̥˚̩̩̥͙°̩̥‧̥·̊‧̍̊`
-            txt += `*𝑨𝒗𝒊𝒔𝒐:* 𝑬𝒔𝒕𝒆 𝒄𝒐𝒅𝒊𝒈𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒆𝒏 𝒆𝒍 𝒏𝒖𝒎𝒆𝒓𝒐 𝒒𝒖𝒆 𝒍𝒐 𝒑𝒊𝒅𝒊𝒐`
+        let txt = ` –  *S E R B O T  -  S U B B O T*\n\n`
+            txt += `┌  ✩  *Usa este Código para convertirte en un Sub Bot*\n`
+            txt += `│  ✩  Pasos\n`
+            txt += `│  ✩  *1* : Haga click en los 3 puntos\n`
+            txt += `│  ✩  *2* : Toque dispositivos vinculados\n`
+            txt += `│  ✩  *3* : Selecciona *Vincular con el número de teléfono*\n` 
+            txt += `└  ✩  *4* : Escriba el Codigo\n\n`
+            txt += `*Nota:* Este Código solo funciona en el número que lo solicito`
          await parent.reply(m.chat, txt, m, rcanal)
          await parent.reply(m.chat, codeBot, m, rcanal)
         rl.close()
@@ -120,21 +118,21 @@ async function connectionUpdate(update) {
         } else {
         }
       }
-    
+
     if (global.db.data == null) loadDatabase()
 
     if (connection == 'open') {
     conn.isInit = true
     global.conns.push(conn)
-    await parent.reply(m.chat, args[0] ? 'Conectado con exito' : 'Conectado exitosamente con WhatsApp\n\n*Nota:* Esto es temporal\nSi el Bot principal se reinicia o se desactiva, todos los sub bots tambien lo haran\n\nEl número del bot puede cambiar, guarda este enlace:\n*-* https://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K', m,)
+    await parent.reply(m.chat, args[0] ? 'EXITO✅' : '*CONECTASTE EXITOSAMENTE A 💞NAKANO EN TU WHATSAPP*\n\n*LEER ESTO⚠️:* Esto es temporal\n*SI LA BOT PRINCIPAL SE APAGA LOS SUBS TAMBIEN LO ARAN*\n\n*RECUERDA QUE PUEDES APOYAR A LA BOT SIGUIENDO EL CANAL*\nhttps://whatsapp.com/channel/0029VaXDEwlC1FuFm82otA0K', m,)
     await sleep(5000)
     if (args[0]) return
-    
-		await parent.reply(conn.user.jid, `La siguiente vez que se conecte envía el siguiente mensaje para iniciar sesión sin utilizar otro código `, m,)
-		
-		await parent.sendMessage(conn.user.jid, {text : usedPrefix + command + " " + Buffer.from(fs.readFileSync("./serbot/" + authFolderB + "/creds.json"), "utf-8").toString("base64")}, { quoted: m })
-	  }
- 
+
+                await parent.reply(conn.user.jid, `La siguiente vez que se conecte envía el siguiente mensaje para iniciar sesión sin utilizar otro código `, m,)
+
+                await parent.sendMessage(conn.user.jid, {text : usedPrefix + command + " " + Buffer.from(fs.readFileSync("./serbot/" + authFolderB + "/creds.json"), "utf-8").toString("base64")}, { quoted: m })
+          }
+
   }
 
   setInterval(async () => {
@@ -146,7 +144,7 @@ async function connectionUpdate(update) {
       delete global.conns[i]
       global.conns.splice(i, 1)
     }}, 60000)
-	
+
 let handler = await import('../handler.js')
 let creloadHandler = async function (restatConn) {
 try {
@@ -167,7 +165,7 @@ conn.ev.off('messages.upsert', conn.handler)
 conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
-  
+
 conn.handler = handler.handler.bind(conn)
 conn.connectionUpdate = connectionUpdate.bind(conn)
 conn.credsUpdate = saveCreds.bind(conn, true)
@@ -192,4 +190,4 @@ export default handler
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-      }
+		}
