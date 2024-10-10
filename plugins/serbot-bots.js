@@ -15,7 +15,7 @@ const replyMessage = message.length === 0 ? "" : message
 const totalUsers = uniqueUsers.size;
 const responseMessage = `${` –  *BOTS CONECTADOS*\n\n${replyMessage.trim()}`.trim()}`
 
-let gifUrl = "https://qu.ax/fhaD.mp4";await conn.sendMessage(m.chat, {video: {url: gifUrl}, gifPlayback: true, caption: text.trim(), mentions: [m.sender]}, {quoted: m});
+let img = await (await fetch(`https://i.ibb.co/CK5FqYG/file.jpg`)).buffer()
 
 await _envio.sendFile(m.chat, img, 'thumbnail.jpg', responseMessage, m, false, { mentions: _envio.parseMention(responseMessage) })
 }
