@@ -4,7 +4,7 @@ let handler = async (m, { conn, text }) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0]
     else who = m.chat
-    if (!who) throw 'mensione al usuario *@user.*'
+    if (!who) throw 'mensione al usuario *@user*'
     let txt = text.replace('@' + who.split`@`[0], '').trim()
     if (!txt) throw 'Cuantos *¥ Yenes* deseas transferir?.'
     if (isNaN(txt)) throw 'Sólo números.'
