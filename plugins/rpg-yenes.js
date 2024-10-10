@@ -12,7 +12,7 @@ let handler = async (m, { conn, text }) => {
     let limit = poin
     let imt = Math.ceil(poin * impuesto)
     limit += imt
-    if (limit < 200) throw 'Mínimo *200* ¥ Yenes.'
+    if (limit < 100) throw 'Mínimo *100* ¥ Yenes.'
     let users = global.db.data.users
     if (limit > users[m.sender].limit) throw '*¥ Yenes* insuficientes para transferir.'
     users[m.sender].limit -= limit
