@@ -17,7 +17,6 @@ const users = global.db.data.users;
 users[who].limit += dmt;
 m.reply(`≡ 💎 ${lenguaje.owner.text19}
 `
-}
 handler.help = ['darstars *@user <cantidad>*']
 handler.tags = ['rpg']
 handler.command = ['darcoins', 'darstars']
